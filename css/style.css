@@ -1,0 +1,143 @@
+*{
+    margin:0%;
+    padding: 0%;
+}
+
+body{
+    background-image: url('../bg.jpg');
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#board{
+    background-image: url('../bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background: linear-gradient(to right, #2193b0 , #6dd5ed); */
+    width: 100vmin;
+    height: 90vmin;
+    border: 3px solid white;
+    margin: 32px;
+    margin-bottom: 5px;
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+}
+
+.head{
+    background: linear-gradient(to right, #EA2027, #EE5A24);
+    border: 2px solid white;
+    border-radius: 11px;
+}
+
+.snake{
+    background: linear-gradient(to right, #30336b, #130f40);
+    border: 3px solid white;
+    border-radius: 222px;
+    box-shadow: -2px -2px 2px 1px lightgray;
+    
+}
+
+.food{
+    background: linear-gradient(to top, orangered, yellow);
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px 1px rgb(124, 122, 122);
+    
+}
+
+#scoreBox{
+    color: white;
+    background-color: #6D214F;
+    border: 1px solid white;
+    padding: 10px;
+    /* font-family: 'Potta One', cursive; */
+    margin: 11px;
+    margin-top: 3px;
+    position: absolute;
+    top: 0px;
+    right: 700px;
+}
+
+#highScoreBox{
+    /* font-family: 'Potta One', cursive; */
+    color: white;
+    border: 1px solid white;
+    background-color: #1B1464;
+    padding: 10px;
+    margin: 11px;
+    margin-top: 3px;
+    position: absolute;
+    top: 0px;
+    right: 511px;
+}
+
+#congrats{
+    background-color: #EE5A24;
+    color: white;
+    border: 2px solid white;
+    font-family: 'Philosopher', sans-serif;
+    border-radius: 2px;
+    position: absolute;
+    display: none;
+    top: 0px;
+    right: 22px;
+    margin: 11px;
+    margin-top: 3px;
+    padding: 6px;
+    transition: all 2s ease-out;
+    box-shadow: 2px 2px 5px 1px #777;
+}
+
+.info{
+    color: white;
+    position: absolute;
+    /* font-weight: bold; */
+    text-shadow: 0px 5px black;
+    box-shadow: 2px 2px 5px 1px black;
+    top: 20px;
+    left: 100px;
+    padding: 11px;
+    /* background-color: #dfd7ff; */
+    text-align: center;
+    font-family: 'Rampart One', cursive;
+    font-size: 1.8rem;
+}
+
+.welcome img{
+    width: 66vmin;
+    height: 33vmin;
+    position: absolute;
+    top: 155px;
+    left: 125px;
+    border:  3px solid white;
+    border-radius: 22px;
+}
+
+.Newsnake{
+    background-image: url('../snake.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 33vmin;
+    height: 44vmin;
+    position: absolute;
+    bottom: 6px;
+    left: 250px;
+}
+
+#loose{
+    background-image: url('../loose.png');
+    background-repeat: no-repeat;
+    background-size: 70% 70%;
+    width: 33vmin;
+    height: 33vmin;
+    position: absolute;
+    top: 444px;
+    left: 500px;
+    display: none;
+}
